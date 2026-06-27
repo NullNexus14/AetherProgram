@@ -148,4 +148,4 @@ Contributions, suggestions, bug reports, and feature requests are always welcome
 ## Author
 
 Developed by **NullNexus14**.
-***SREA Malware Analisys Program***
+***SREA - Security Research & Engineering Architecture***
