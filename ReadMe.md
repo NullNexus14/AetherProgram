@@ -57,6 +57,7 @@ Aether/
 
 Use CoreSync.py to install all the packages needed.
 If errors occur, please contact the Support email.
+
 > **Important**
 >
 > Run **`Aether.py`** from the project root. Do **not** execute files inside the `modules/` directory directly.
