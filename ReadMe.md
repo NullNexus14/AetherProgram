@@ -136,14 +136,11 @@ Contributions, suggestions, bug reports, and feature requests are always welcome
 
 ## License
 
-Specify your project's license here.
-
-Example:
-
-**MIT License**
+**GNU General Public License v3.0**
 
 ---
 
 ## Author
 
-Developed by **NullNexus**.
+Developed by **NullNexus14**.
+***SREA Malware Analisys Program***
