@@ -1,181 +1,147 @@
-```markdown
-# Aether
+ █████╗ ███████╗████████╗██╗  ██╗███████╗██████╗
+██╔══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔══██╗
+███████║█████╗     ██║   ███████║█████╗  ██████╔╝
+██╔══██║██╔══╝     ██║   ██╔══██║██╔══╝  ██╔══██╗
+██║  ██║███████╗   ██║   ██║  ██║███████╗██║  ██║
+╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 
-<p align="center">
-  <img src="assets/logo.png" alt="Aether Logo" width="200">
-</p>
-
-<p align="center">
-  <strong>A modern command-line toolkit for system analysis, network reconnaissance, and local diagnostics.</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
-  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-green.svg">
-  <img src="https://img.shields.io/badge/Status-Active-success.svg">
-  <img src="https://img.shields.io/badge/License-MIT-orange.svg">
-</p>
+> **A modern command-line toolkit for system analysis, network diagnostics, and local network scanning.**
 
 ---
 
 ## Overview
 
-**Aether** is a lightweight yet powerful Python toolkit designed for system inspection, local diagnostics, and network analysis.
+Aether is a lightweight Python-based toolkit that combines system diagnostics, network analysis, and local scanning into a single interactive command-line application.
 
-The project aims to provide a clean and interactive command-line experience while keeping dependencies minimal and performance high.
-
-Whether you need to inspect your machine, perform local scans, or analyze network information, Aether provides a single interface for common administrative tasks.
+Designed with simplicity and performance in mind, Aether provides an intuitive interface while remaining modular and easy to extend.
 
 ---
 
 ## Features
 
 - System information and diagnostics
-- Network analysis
-- Local network scanning
-- Interactive terminal interface
+- Network analysis tools
+- Local network scanner
+- Interactive command-line interface
 - Modular architecture
 - Lightweight standalone version
-- Cross-platform support *(where applicable)*
-
----
-
-## Project Structure
-
-### Full Project
-
-```
-
-AetherProgram/
-│
-├── Aether.py
-├── modules/
-│   ├── ...
-│   └── ...
-└── README.md
-
-````
-
-> **Important**
->
-> Always execute **`Aether.py`** from the project root.
->
-> Do **not** run the files located inside the `modules/` directory directly.
+- Cross-platform compatibility *(where supported)*
 
 ---
 
 ## Installation
 
-### Option 1 — Clone the Repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/USERNAME/Aether.git
+git clone <repository-url>
 cd Aether
-python3 Aether.py
-````
+```
+
+### Download the ZIP
+
+Download the latest release and extract the archive.
+
+Your project should have the following structure:
+
+```text
+Aether/
+├── modules/
+├── Aether.py
+└── README.md
+```
+
+> **Important**
+>
+> Run **`Aether.py`** from the project root. Do **not** execute files inside the `modules/` directory directly.
 
 ---
 
-### Option 2 — Download the ZIP
+## Running Aether
 
-1. Download the latest ZIP release.
-2. Extract the archive.
-3. Verify the directory structure shown above.
-4. Run:
+### Linux / macOS
 
 ```bash
 python3 Aether.py
+```
+
+### Windows (PowerShell)
+
+```powershell
+python Aether.py
+```
+
+### Windows (Command Prompt)
+
+```cmd
+python Aether.py
 ```
 
 ---
 
 ## Standalone Version
 
-A lightweight version of **Aether** is available as a single Python file.
-
-Run it using:
+If you are using the standalone version:
 
 ```bash
 python3 ./Aether.py
 ```
 
-The standalone release provides the same core functionality while offering a more cinematic command-line experience.
+or
+
+```powershell
+python .\Aether.py
+```
 
 ---
 
 ## Requirements
 
-* Python 3.10 or newer
-* Internet connection *(only for features that require online access)*
-
----
-
-## Usage
-
-Launch the application:
-
-```bash
-python3 Aether.py
-```
-
-Navigate through the interactive menu to access the available analysis and scanning utilities.
+- Python 3.10 or newer
+- Required Python modules (see `requirements.txt`, if provided)
 
 ---
 
 ## Support
 
-If you encounter an issue or would like to report a bug, please send a formal email to:
+If you encounter an issue or have a question, contact:
 
-**[NullNexus14@proton.me](mailto:NullNexus14@proton.me)**
+**NullNexus14@proton.me**
 
-Please include:
+Please include the following information:
 
-* Name & Surname *(optional)*
-* Greeting
-* Description of the problem
-* Operating System
-* Screenshot of the error *(recommended)*
+- Name & Surname *(Optional)*
+- Greeting
+- Description of the problem
+- Operating System
+- Screenshot of the error *(Recommended)*
 
-Providing detailed information allows issues to be reproduced and resolved more efficiently.
+Providing detailed information will help diagnose and resolve the issue more efficiently.
 
 ---
 
 ## Troubleshooting
 
-If a suggested solution does not resolve the issue, an optimized version tailored to your operating system may be developed after further investigation.
+If the issue persists after applying the suggested solution, an optimized version tailored to your operating system can be prepared if necessary.
 
 ---
 
 ## Contributing
 
-Contributions, bug reports, feature requests, and suggestions are welcome.
-
-If you would like to contribute:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Commit your changes.
-4. Open a Pull Request.
+Contributions, suggestions, bug reports, and feature requests are always welcome.
 
 ---
 
 ## License
 
-This project is distributed under the MIT License.
+Specify your project's license here.
 
-See the `LICENSE` file for more information.
+Example:
+
+**MIT License**
 
 ---
 
 ## Author
 
-**NullNexus**
-
-Developed with Python for educational purposes, system diagnostics, and network analysis.
-
----
-
-<p align="center">
-Made with ❤️ and Python
-</p>
-```
+Developed by **NullNexus**.
