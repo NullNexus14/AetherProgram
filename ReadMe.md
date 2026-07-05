@@ -37,7 +37,7 @@ Designed with simplicity and performance in mind, Aether provides an intuitive i
 
 ```bash
 git clone <repository-url>
-cd Aether
+cd AetherProgram
 ```
 
 ### Download the ZIP
