@@ -16,7 +16,7 @@ We welcome contributors interested in:
 
 Join our Discord to collaborate, discuss development, and contribute to the project:
 
-👉 https://discord.gg/NTsz4bFK39
+👉 https://discord.gg/wNn3aPMYWk
 
 ---
 
