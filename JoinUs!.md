@@ -8,7 +8,7 @@ We welcome contributors interested in:
 - Reverse engineering
 - Malware analysis
 - Systems programming
-- Tooling development (Python, C/C++, C#, Java, Rust, TypeScript, JavaScript, Ruby)
+- Tooling development (Python, Java, C, C++, C#, Go, Rust, Haskell, Shell, Assembly)
 
 ---
 
