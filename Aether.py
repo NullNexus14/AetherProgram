@@ -19,7 +19,6 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-
 import psutil
 import psutils
 import pywifi
