@@ -36,7 +36,7 @@ Designed with simplicity and performance in mind, Aether provides an intuitive i
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/NullNexus14/AetherProgram
 cd AetherProgram
 ```
 
