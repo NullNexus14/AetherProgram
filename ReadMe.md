@@ -1,3 +1,6 @@
+> **Note:** The repository edition does not contain the latest Stable Release.  
+> For the complete supported version, download the newest release from the Releases section.
+
 ```text
  █████╗ ███████╗████████╗██╗  ██╗███████╗██████╗
 ██╔══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔══██╗
@@ -7,137 +10,79 @@
 ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 ```
 
-> **A modern command-line toolkit for system analysis, network diagnostics, and local network scanning.**
+**A modern command-line toolkit for system analysis, network diagnostics, and local network scanning.**
 
 ---
 
 ## Overview
 
-Aether is a Python-based command-line toolkit designed to provide system information, network analysis capabilities, and local security utilities through an interactive interface.
+Aether is a comprehensive Python-based command-line application that provides essential system diagnostics, network analysis, and security capabilities. The toolkit is engineered for portability, modularity, and cross-platform operation, supporting Windows, macOS, and Linux environments.
 
-The project is designed with modularity, portability, and ease of use in mind, supporting multiple operating systems while maintaining a lightweight and extensible architecture.
-
----
-
-## Available Versions
-
-Aether is available through the official Stable Release and the legacy repository edition.
-
-For normal usage, always use the Stable Release.
-
-Stable Release Version (Recommended)
-
-The Stable Release Version is the official supported distribution of Aether.
-
-Users are strongly recommended to download the latest stable release from the Releases section.
-
-The stable release provides:
-
-- Complete modular architecture
-- Updated dependencies and components
-- Additional security analysis features
-- Malware detection capabilities
-- System integrity verification
-- Improved platform compatibility
-- Support for troubleshooting and configuration issues
-
-The release package is designed for end users and requires only:
-
-- Python 3.10 or newer
-- Extraction of the downloaded archive
-
-For the most complete and supported Aether experience, use the latest stable release.
 ---
 
 ## Features
 
-**Core Capabilities**
+### System Analysis
+- System information retrieval and diagnostics
+- System integrity verification
+- Host configuration analysis
 
-- System information and diagnostics
-- Network analysis tools
-- Local network scanning
-- Interactive command-line interface
-- Modular architecture
-- Cross-platform compatibility (where supported)
+### Network Operations
+- Real-time network monitoring
+- Local area network (LAN) discovery and enumeration
+- Gateway detection and analysis
+- Port scanning and service enumeration
+- ARP table analysis
+- Traceroute functionality
+- Device snapshot comparison and change detection
 
-**Security and Forensic Analysis**
-
-- YARA signature scanning
-- MASI forensic scanner
+### Security and Forensic Analysis
+- YARA signature-based scanning
+- MASI forensic scanner integration
 - Browser Extension Audit (BEA)
 - USB device security auditing
-- System integrity analysis
+- Malware detection capabilities
+- System component integrity assessment
 
-**Network Monitoring and Discovery**
-
-- Real-time network monitoring
-- Enhanced port scanning
-- Gateway discovery and port scanning
-- ARP table enumeration
-- Traceroute analysis
-- Device snapshot comparison
-
-**Release Structure**
-
-- Stable Release Edition — official supported version with complete functionality
-- Repository Edition — lightweight legacy edition for reference and experimentation
-
----
-
-## Repository Edition
-
-The contents of this repository represent the lightweight edition of Aether and related project documentation.
-
-This edition is provided for:
-
-- Reference purposes
-- Legacy usage
-- Source inspection
-- Experimental usage
-
-The repository edition is not the current supported release and may not contain the latest features, improvements, or security components.
-
-For the complete and supported Aether experience, download the latest Stable Release from the Releases section.
+### User Interface
+- Interactive command-line interface
+- Modular command architecture
+- Cross-platform compatibility
 
 ---
 
 ## Installation
 
----
-### Stable Release Installation (Recommended)
+### Prerequisites
 
-For the complete Aether experience, download the latest Stable Release from the Releases section.
+- **Python 3.10 or newer**
+- Standard library modules (dependencies listed in `requirements.txt` if applicable)
 
-The Stable Release includes:
+### Recommended Installation (Stable Release)
 
+Download the latest stable release from the [Releases](../../releases) section.
+
+**Stable Release includes:**
 - Complete modular architecture
-- Current features and improvements
+- Current feature set and improvements
 - Updated dependencies
 - Security analysis components
-- Supported configuration
+- Pre-configured environment
 
-After extraction, run Aether using the instructions below.
+After downloading, extract the archive and proceed to [Running Aether](#running-aether).
 
----
+### Repository Edition Installation
 
-## Repository Edition Installation
+The repository edition is provided for reference, legacy usage, and source inspection. This edition is not actively maintained and may lack latest features and security components.
 
-The following instructions apply only to the legacy lightweight repository edition.
-
-This edition is no longer actively maintained and is provided for reference, experimentation, and source inspection.
-
-Clone the repository:
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/NullNexus14/AetherProgram
 cd AetherProgram
 ```
 
-### Download the ZIP
-
-Download the latest release and extract the archive.
-
-Your project should have the following structure:
+**Or download the ZIP archive** and extract it. The resulting directory structure should be:
 
 ```text
 Aether/
@@ -146,19 +91,13 @@ Aether/
 └── README.md
 ```
 
-### CoreSync.py
+**Install dependencies (if required):**
 
-`CoreSync.py` is a discontinued dependency installer and is no longer maintained.
+```bash
+pip install -r requirements.txt
+```
 
-The tool was deprecated 5 months ago and should not be used for new installations.
-
-For the recommended installation method, download the latest Stable Release. The Stable Release includes all required packages within an isolated virtual environment.
-
-Alternatively, users may install required dependencies manually.
-
-> **Important**
->
-> Run **`Aether.py`** from the project root. Do **not** execute files inside the `modules/` directory directly.
+> **Important:** Execute `Aether.py` from the project root directory. Do not run files in the `modules/` directory directly.
 
 ---
 
@@ -173,7 +112,7 @@ python3 Aether.py
 ### Windows (PowerShell)
 
 ```powershell
-python Aether.py
+python .\Aether.py
 ```
 
 ### Windows (Command Prompt)
@@ -182,68 +121,74 @@ python Aether.py
 python Aether.py
 ```
 
----
+### Standalone Executable
 
-## Standalone Version
-
-If you are using the standalone version:
+If using a standalone packaged version:
 
 ```bash
-python3 ./Aether.py
-```
-
-or
-
-```powershell
-python .\Aether.py
+./Aether
 ```
 
 ---
 
-## Requirements
+## Project Structure
 
-- Python 3.10 or newer
-- Required Python modules (see `requirements.txt`, if provided)
+| Component | Purpose |
+|-----------|---------|
+| `Aether.py` | Main entry point; initializes the interactive interface |
+| `modules/` | Modular components providing core functionality |
+| `requirements.txt` | Python package dependencies |
 
 ---
 
 ## Support
 
-If you encounter an issue or have a question, contact:
+For issues, questions, or configuration assistance:
 
-**NullNexus14@proton.me**
+**Contact:** NullNexus14@proton.me
 
-Please include the following information:
+**Please provide:**
+- Description of the issue or question
+- Operating system and version
+- Python version (`python --version`)
+- Error message or screenshot (recommended)
+- Steps to reproduce (if applicable)
 
-- Name & Surname *(Optional)*
-- Greeting
-- Description of the problem
-- Operating System
-- Screenshot of the error *(Recommended)*
-
-Providing detailed information will help diagnose and resolve the issue more efficiently.
+Detailed information enables faster and more effective troubleshooting.
 
 ---
 
 ## Troubleshooting
 
-If the issue persists after applying the suggested solution, an optimized version tailored to your operating system can be prepared if necessary.
+**Common Issues**
+
+- **Module import errors:** Verify Python 3.10+ and all dependencies are installed.
+- **Permission errors:** Ensure execute permissions are set on `Aether.py` (Linux/macOS).
+- **Network scanning limitations:** Some network operations may require elevated privileges.
+
+If issues persist after standard troubleshooting, contact support with detailed system information.
 
 ---
 
 ## Contributing
 
-Contributions, suggestions, bug reports, and feature requests are always welcome.
+Contributions, bug reports, feature requests, and suggestions are encouraged and welcome.
 
 ---
 
 ## License
 
-**GNU General Public License v3.0**
+Aether is distributed under the **GNU General Public License v3.0**. See `LICENSE` file for terms.
 
 ---
 
 ## Author
 
-Developed by **NullNexus14**.
-***SREA - Security Research & Engineering Architecture***
+**NullNexus14**  
+SREA - Security Research & Engineering Architecture
+
+---
+
+## Disclaimer
+
+Aether is designed for legitimate system administration, network diagnostics, and security research. Users are responsible for ensuring compliance with applicable laws and organizational policies when using this toolkit.
